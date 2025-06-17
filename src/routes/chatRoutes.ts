@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
         }
     }
     else {
-        res.json({ reply });
+        res.json({ reply:  reply || "I'm sorry, I didn't understand that." });
     }
 });
 

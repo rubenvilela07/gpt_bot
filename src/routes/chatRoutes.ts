@@ -38,5 +38,11 @@ router.post("/", async (req, res) => {
     }
 });
 
+router.get("/test", async (req, res) => {
+    res.status(200).json({
+        message: "Chat route is working"
+    });
+});
+
 export default router;
 
